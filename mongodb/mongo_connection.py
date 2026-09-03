@@ -1,0 +1,9 @@
+from pymongo import MongoClient
+from config import settings
+
+
+client = MongoClient(settings.MONGO_URI)
+
+db = client[settings.MONGO_DB]
+
+products_collection = db["products"]
