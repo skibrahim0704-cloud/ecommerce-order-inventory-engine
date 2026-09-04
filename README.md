@@ -1,21 +1,24 @@
 E-commerce-project/
 ├── main.py                      # entry point — builds the app, includes routers
-├── config.py                    # env-based settings (Postgres + Mongo URLs)
+├── config.py                    # env-based settings (MySQL + MongoDB URLs)
 ├── schema/
-│   ├── product_schema.py        # Pydantic models for products
-│   └── order_schema.py          # Pydantic models for orders
+│   ├── product\_schema.py        # Pydantic models for products
+│   └── order\_schema.py          # Pydantic models for orders
 ├── mongodb/
-│   ├── mongo_connection.py      # Mongo client + products collection
-│   └── product_crud.py          # catalog CRUD + atomic stock reserve/release
+│   ├── mongo\_connection.py      # Mongo client + products collection
+│   └── product\_crud.py          # catalog CRUD + atomic stock reserve/release
 ├── sql/
-│   ├── sql_connection.py        # Postgres engine/session (SQLAlchemy)
-│   ├── sql_models.py            # Order, OrderItem, OrderStatus
-│   └── order_crud.py            # order lifecycle logic
+│   ├── sql\_connection.py        # MySQL engine/session (SQLAlchemy))
+│   ├── sql\_models.py            # Order, OrderItem, OrderStatus
+│   └── order\_crud.py            # order lifecycle logic
 ├── routes/
-│   ├── product_routes.py        # /products endpoints
-│   ├── order_routes.py          # /orders endpoints
-│   └── analytics_routes.py      # /analytics endpoints
+│   ├── product\_routes.py        # /products endpoints
+│   ├── order\_routes.py          # /orders endpoints
+│   └── analytics\_routes.py      # /analytics endpoints
 ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
 └── .env.example
+
+
+

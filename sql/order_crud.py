@@ -21,7 +21,7 @@ def create_order(db: Session, products_collection, order_in: OrderCreate) -> Ord
     """
     Places an order across two databases:
       1. Reserve stock atomically in MongoDB for each line item.
-      2. Persist the order + items transactionally in Postgres.
+      2. Persist the order + items transactionally in MySQL.
     If any reservation fails partway through, everything already
     reserved is rolled back so stock counts never drift.
     """
@@ -101,3 +101,4 @@ def update_order_status(
     db.commit()
     db.refresh(order)
     return order
+
