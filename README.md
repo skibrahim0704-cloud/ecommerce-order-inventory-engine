@@ -8,7 +8,7 @@ E-commerce-project/
 │   ├── mongo\_connection.py      # Mongo client + products collection
 │   └── product\_crud.py          # catalog CRUD + atomic stock reserve/release
 ├── sql/
-│   ├── sql\_connection.py        # MySQL engine/session (SQLAlchemy))
+│   ├── sql\_connection.py        # MySQL engine/session (SQLAlchemy)
 │   ├── sql\_models.py            # Order, OrderItem, OrderStatus
 │   └── order\_crud.py            # order lifecycle logic
 ├── routes/

@@ -14,7 +14,7 @@ services:
     image: mysql:8.0
     container_name: ecommerce_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${mysql560309}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DB}
     ports:
       - "3306:3306"
